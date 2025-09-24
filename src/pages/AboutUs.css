@@ -1,0 +1,118 @@
+.title {
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px 0;
+  background-color: #f8f8f8;
+}
+
+.title h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+
+.cards-container {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 95%;
+}
+
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+  width: 250px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 250%;
+  height: 180px; 
+  object-fit: cover;
+}
+
+.card p {
+  padding: 20px 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.paragraph {
+  max-width: 900px;          
+  margin: 40px auto;          
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;                 
+}
+
+.paragraph h3 {
+  font-size: 1.2rem;         
+  line-height: 1.8;
+  color: #444;
+  font-weight: 400;
+  text-align: justify;
+}
+
+
+@media (max-width: 992px) {
+  .card {
+    width: 45%; 
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%; 
+  }
+}
+
+@media (max-width: 992px) {
+  .paragraph h3 {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .paragraph {
+    padding: 0 15px;
+  }
+  .paragraph h3 {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}

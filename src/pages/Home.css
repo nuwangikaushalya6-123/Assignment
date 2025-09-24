@@ -1,0 +1,238 @@
+
+.Hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 75vh;
+  color: #fff;
+  background-image: url('../assest/photo1.avif');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.Hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+
+.about {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+.amenities {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.amenities h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.amenities-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.amenity-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.amenity-card i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.amenity-card p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.amenity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.policies-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+}
+
+.policies-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #333;
+  
+}
+
+.policies-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.policy-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  padding: 20px;
+  width: 180px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.policy-card i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.policy-card p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.policy-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefits-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+}
+
+.benefits-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  
+  color: #333;
+}
+
+.benefits-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.benefit-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.benefit-card i {
+  font-size: 2rem;
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+.benefit-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+
+@media (max-width: 992px) {
+  .benefit-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .benefit-card {
+    width: 100%;
+  }
+}
+
+
+
+@media (max-width: 992px) {
+  .policy-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .policy-card {
+    width: 100%;
+  }
+}
+
+
+
+@media (max-width: 992px) {
+  .hero-content h1 { font-size: 2.6rem; }
+  .hero-content p { font-size: 1rem; }
+}
+
+@media (max-width: 576px) {
+  .Hero { min-height: 55vh; }
+  .hero-content h1 { font-size: 1.8rem; }
+  .hero-content p { font-size: 0.9rem; }
+}
