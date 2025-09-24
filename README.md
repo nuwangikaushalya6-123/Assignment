@@ -9,12 +9,25 @@ The goal of this project is to create an interactive, visually appealing, and us
 - **index.js** → Entry point of the React app.  
 - **package.json** → Contains dependencies and project information.
 # features
-- Responsive navigation bar with sign-up button  
-- Rooms page with descriptions and images  
-- Facilities page with styled cards  
-- Events page highlighting cultural nights, BBQs, and conferences  
-- The Contact Page allows visitors to send messages directly to the hotel. It includes a user-friendly form  
-- Fully responsive design (desktop & mobile friendly)
+- Responsive navigation bar with sign-up button.  
+- Rooms page with descriptions and images. 
+- Facilities page with styled cards.  
+- Events page highlighting cultural nights, BBQs, and conferences.  
+- The Contact Page allows visitors to send messages directly to the hotel. It includes a user-friendly form.  
+- Fully responsive design (desktop & mobile friendly).
 
 # instructions
 **Clone the Repository**
+git clone https://github.com/nuwangikaushalya6-123/Assignment.git
+cd Assignment
+**Install Dependencies**
+npm install
+**Start the Development Server**
+npm start
+**Open Browser**
+http://localhost:3000
+# project Demo
+[View Demo Video](https://drive.google.com/file/d/19vh-kqb-JbqC8f2wpjYfObQcWylAoA5_/view?usp=sharing)
+
+
+
