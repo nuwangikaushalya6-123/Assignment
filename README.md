@@ -5,9 +5,9 @@ The goal of this project is to create an interactive, visually appealing, and us
 - **public/** - Static files that React serves directly .  
 - **src/Components/** - Reusable UI parts like Navbar, Footer, AuthForm,and CSS modules.  
 - **src/Pages/** - Each main page of the hotel website (Home, Rooms, Facilities, Events,About Us,Contact).  
-- **src/assets/** → Images and media (events, rooms, gallery photos).  
-- **index.js** → Entry point of the React app.  
-- **package.json** → Contains dependencies and project information.
+- **src/assets/** - Images and media (events, rooms, gallery photos).  
+- **index.js** - Entry point of the React app.  
+- **package.json** - Contains dependencies and project information.
 # features
 - Responsive navigation bar with sign-up button.  
 - Rooms page with descriptions and images. 
